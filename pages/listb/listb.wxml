@@ -1,0 +1,14 @@
+<!--pages/listb/listb.wxml-->
+<!--index.wxml-->
+<!-- 新闻列表 -->
+<view>游戏</view>
+<view wx:for="{{newlist}}">
+<navigator url='/pages/lists/lists?id={{item.user_id}}'>
+  <image class='newW' src='{{item.image1}}' mode='aspectFill'></image>
+  <view class="listinfo">
+    <view class='titles'>{{item.text}}</view>
+    <view>{{item.created_at}}</view>
+  </view>
+</navigator>
+  
+</view>

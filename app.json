@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/lista/lista",
+    "pages/listb/listb",
+    "pages/lists/lists"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "生活娱乐新闻",
+    "navigationBarTextStyle":"white"
+    
+  },
+  "tabBar":{
+    "color": "#333",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#fff",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"img/homeD.png",
+      "selectedIconPath":"img/homeS.png"
+    },{
+      "pagePath":"pages/lista/lista",
+      "text":"娱乐",
+      "iconPath": "img/yuleD.png",
+      "selectedIconPath": "img/yuleS.png"
+    },{
+      "pagePath": "pages/listb/listb",
+      "text": "财经",
+      "iconPath": "img/gameD.png",
+      "selectedIconPath": "img/gameS.png"
+    }
+    ]
+  }
+}

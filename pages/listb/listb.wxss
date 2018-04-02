@@ -1,0 +1,17 @@
+/* pages/listb/listb.wxss */
+.newW{
+  width: 300rpx;
+  height: 250rpx;
+}
+.listinfo{
+  width: 450rpx;
+  float: right;
+}
+.titles{
+  height: 105rpx;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

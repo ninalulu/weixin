@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"  class='ban'>
+  <block wx:for="{{banner}}">
+    <swiper-item>
+      <image src="{{item.image}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 新闻列表 -->
+<view wx:for="{{newlist}}">
+<navigator url='/pages/lists/lists?id={{item.user_id}}'>
+  <image class='newW' src='{{item.image1}}' mode='aspectFill'></image>
+  <view class="listinfo">
+    <view class='titles'>{{item.text}}</view>
+    <view>{{item.created_at}}</view>
+  </view>
+</navigator>
+  
+</view>
